@@ -74,3 +74,76 @@ const createTweetElement = function(tweet) {
         </article>`);
     return $tweet;
   };
+
+
+  $(document).ready(function() {
+
+    //toggling the new tweet
+    $("#down").click(function() {
+      $("#new-tweet2").toggle();
+    });
+  
+  
+  
+  
+    //submission
+    $(".new-tweet form").submit(function(event) {
+  event.preventDefault();
+  let textVal = $("#tweetText").val()
+  let textLength = $("#tweetText").val().length
+  
+  
+      if (textVal === '' || textVal === null || textLength > 140) {
+        setTimeout(function() {
+        $("#error-msg").show();
+        });
+         } 
+         
+        else {
+        $.ajax({
+          url: "/tweets/",
+          type: "POST",
+          data: $(this).serialize(),
+          success: () => {
+            loadtweets();
+            $("#tweetText").val("");
+  
+    
+            let textValue = $(this).val();
+            let theRemaining = 140 - textValue.length;
+  
+            // traverse up and down the DOM to get character count
+            let theCounter= $(this).closest("form").find(".counter");
+            theCounter.text(theRemaining);
+          }
+        });
+      }
+    });
+  
+  
+  
+  
+  
+  
+    const loadtweets = () => {
+      $.ajax("/tweets/", { method: "GET" })
+        .then(function(data) {
+          renderTweets(data);
+        }
+        );
+    };
+  
+    loadtweets();
+  });
+  
+  
+  
+  
+  
+  
+  
+  const escape = function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
