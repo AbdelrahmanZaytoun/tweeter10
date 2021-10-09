@@ -1,0 +1,71 @@
+
+ @media only screen and (min-width: 960px) {
+    .new-tweet {
+      width: 50%;
+      float: right;
+    }
+  }
+  
+  .new-tweet {
+    text-align: center;
+    margin: 20px auto 40px;
+    position: relative;
+    width: 95%;
+  }
+  
+  .new-tweet form > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tweet-box {
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    background-color: #f4f1ec;
+    color: #2593c2;
+    width: 100%;
+    border: solid;
+    border-color: #5ec7f4;
+    border-bottom-width: 3px;
+  
+    padding: 0 0 0 0;
+  }
+  
+  
+  
+  .tweet-button {
+    font-family: 'Bungee', cursive;
+    color: #2593c2;
+    border-color: #5ec7f4;
+  }
+  
+  .counter {
+    font-family: 'Bungee', cursive;
+    color: #2593c2;
+  
+    
+  }
+  
+  .overtweeted {
+    color: rgb(165, 6, 6);
+  }
+  
+  #new-tweet2 {
+    display: none;
+  }
+  
+  #error-msg {
+    display: none;
+    font-weight: bolder;
+    vertical-align: middle;
+    color: rgb(176, 7, 7);
+    border: rgb(152, 0, 0);
+    border-style: solid;
+    text-align: center;
+    margin: 20px auto 40px;
+    position: relative;
+    width: 95%;
+  }
+  
