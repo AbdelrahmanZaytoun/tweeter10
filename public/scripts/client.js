@@ -30,7 +30,14 @@ const tweetData = [
   ];
 
 
+  const renderTweets = function(tweets) {
 
+    $('#tweets-container').empty();
+    for (let tweet of tweets) {
+      let $tweet = createTweetElement(tweet);
+      $('#tweets-container').prepend($tweet);
+    }
+  };
 
 const createTweetElement = function(tweet) {
     let $date = Math.floor((Date.now() - tweet.created_at) / 86400000);
