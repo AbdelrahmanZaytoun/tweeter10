@@ -1,0 +1,58 @@
+
+
+@media only screen and (min-width: 960px) {
+    nav {
+      width: 100%;
+    }
+    .flex-container {
+      width: 100%;
+      float: left;
+    }
+  
+    .down-arrow {
+      z-index: 5000;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 960px) {
+  
+  
+    .flex-container {
+      background-color: #1da1f2;
+      background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+      /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    }
+  }
+  
+  nav {
+     color: #FFFFFF;
+     background-color: #4056A1;
+     height: 120px;
+     padding: 1.5em;
+     position: relative;
+     z-index: 1030;
+    }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    }
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  .write-tweet {
+    position: relative;
+  }
+  
+  .down-arrow {
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+  
+  
+  }
+  
+  
