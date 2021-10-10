@@ -1,0 +1,47 @@
+/* Laptops / Desktops: minimum width of 960px */
+
+@media only screen and (min-width: 960px) {
+    .parent {
+      display: flex;
+      width: 100%;
+      position:sticky;
+      justify-content: space-between;
+      top: 250px;
+    }
+  
+    .page-content {
+      margin-right: 2%;
+      width: 150%;
+    }
+  
+    .current-profile {
+      margin-left: 2%;
+      text-align: center;
+      position: sticky;
+      top: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 960px) {
+    .current-profile {
+      background-color: #d4c900;
+    }
+  
+  }
+  
+  .current-profile {
+    color: #FFFFFF;
+    background-color: #1da1f2;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    height: 400px;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    position: relative;
+   }
+  
+   .my-name {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #bde9fc;
+   }
