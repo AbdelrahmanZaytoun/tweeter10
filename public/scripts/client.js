@@ -112,18 +112,12 @@ const createTweetElement = function(tweet) {
             let textValue = $(this).val();
             let theRemaining = 140 - textValue.length;
   
-            // traverse up and down the DOM to get character count
             let theCounter= $(this).closest("form").find(".counter");
             theCounter.text(theRemaining);
           }
         });
       }
     });
-  
-  
-  
-  
-  
   
     const loadtweets = () => {
       $.ajax("/tweets/", { method: "GET" })
@@ -139,11 +133,10 @@ const createTweetElement = function(tweet) {
   
   
   
-  
-  
-  
   const escape = function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+  
+  
