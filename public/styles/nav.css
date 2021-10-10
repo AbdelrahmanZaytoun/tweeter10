@@ -43,10 +43,10 @@
   .container {
     flex-direction: column;
   }
-  
+/*   
   .write-tweet {
     position: relative;
-  }
+  } */
   
   .down-arrow {
     color: #f26666;
