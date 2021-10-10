@@ -30,10 +30,11 @@
   }
   
   .current-profile {
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #1da1f2;
-    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
-    height: 400px;
+    background-color: #852747;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */    height: 400px;
     padding: 1em;
     width: 100%;
     text-align: center;
@@ -43,5 +44,5 @@
    .my-name {
     margin-bottom: 0px;
     margin-top: 0px;
-    color: #bde9fc;
+    color: #ffffff;
    }

@@ -6,16 +6,23 @@
   }
   
   .tweet {
+      padding: 13px;
     margin: 20px auto 40px;
     position: relative;
     width: 95%;
     border: solid;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 2px solid #83224c;
+
   }
   
   .tweet:hover {
-    color: royalblue;
+    color: #F5C6A5;
     opacity: 70%;
-    box-shadow: 10px 5px 5px royalblue;
+    box-shadow: 10px 5px 5px #F5C6A5;
   }
   
   .handle:hover {
