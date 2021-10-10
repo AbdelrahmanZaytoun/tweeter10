@@ -1,7 +1,9 @@
 # Tweeter Project
 
 Tweeter is a simple, single-page Twitter clone and created by Abdelrahman Zaytoun.
+
 ![Alt text](https://github.com/AbdelrahmanZaytoun/tweeter10/blob/master/public/images/01.png)
+![Alt text](https://github.com/AbdelrahmanZaytoun/tweeter10/blob/master/public/images/02.png)
 
 
 ## Getting Started
